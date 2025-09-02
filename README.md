@@ -57,7 +57,7 @@ public class  LinkedList
         size = 0;
     }
 
-    public int Size()
+    public int Length()
     {
         return size;
     }
@@ -99,7 +99,8 @@ public class  LinkedList
         list.AddLast(10);
         list.AddLast(20);
         list.AddLast(30);
-        list.Display(); 
+        list.Display();  // 10 20 30
+        Console.WriteLine("Size is" + list.Length()); //Size is 3
 
     }
     
