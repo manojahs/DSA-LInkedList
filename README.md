@@ -25,6 +25,86 @@ Linked List
 2)Node is the computer location in the memory it contains like data and Next
 3)Link which stored the address of another Node
 
+Linked List Traverse and Display
+---------------------------------
+// See https://aka.ms/new-console-template for more information
+using System;
+using System.Reflection.Metadata.Ecma335;
+
+
+public class Node
+{
+    public int Element;
+    public Node Next;
+
+    public Node(int e , Node node)
+    {
+        Element = e;
+        Next = node;
+    }
+}
+
+public class  LinkedList
+{
+    private Node head;
+    private Node Tail;
+    private int size;
+
+    public LinkedList()
+    {
+        head = null;
+        Tail = null;
+        size = 0;
+    }
+
+    public int Size()
+    {
+        return size;
+    }
+
+    public bool IsEmpty()
+    {
+        return size == 0;
+    }
+
+    public void AddLast(int e)
+    {
+        Node newest = new Node(e, null);
+        if (IsEmpty())
+        {
+            head = newest;
+        }
+        else
+        {
+            Tail.Next = newest;
+        }
+        Tail = newest;
+        size += 1;
+    }
+
+    public void Display()
+    {
+        Node p = head;
+        while(p!=null)
+        {
+            Console.Write(p.Element + " ");
+            p = p.Next;
+        }
+        Console.WriteLine();
+    }
+
+    public static void Main()
+    {
+        LinkedList list= new LinkedList();
+        list.AddLast(10);
+        list.AddLast(20);
+        list.AddLast(30);
+        list.Display(); 
+
+    }
+    
+}
+
 
 
 ```
