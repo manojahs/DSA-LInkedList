@@ -1,5 +1,8 @@
 # DSA-LInkedList
 
+<img width="482" height="230" alt="image" src="https://github.com/user-attachments/assets/b2e83af4-d261-43c1-b80e-1231d1283b60" />
+<img width="508" height="278" alt="image" src="https://github.com/user-attachments/assets/492754cf-03f2-4e5d-af29-e2993dfbd87a" />
+
 ```
 Array
 ---------
@@ -7,13 +10,14 @@ Array
 Blocks the sequential Memory starts with first element with 0 index
 
 Limitations of an array
-Array stored only same datatype values
-Array is having fixed amount of size it cannot be changed
+1)Array stored only same datatype values
+2)Array is having fixed amount of size it cannot be changed
 
 Linked List
 -------------
-Linked list is a collection of elements where each elements represented as Node
-Node is the computer location in the memory it contains like data and Link 
+1)Linked list is a collection of elements where each elements represented as Node
+2)Node is the computer location in the memory it contains like data and Link
+3)Link which stored the address of another Node
 
 
 
