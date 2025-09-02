@@ -16,7 +16,7 @@ Limitations of an array
 Linked List
 -------------
 1)Linked list is a collection of elements where each elements represented as Node
-2)Node is the computer location in the memory it contains like data and Link
+2)Node is the computer location in the memory it contains like data and Next
 3)Link which stored the address of another Node
 
 
